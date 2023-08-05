@@ -1,22 +1,20 @@
-import Hello from "./component/Hello";
-import Article from "./component/article/Article";
-import Rendering from "./component/Rendering";
-import Conditional from "./component/Conditional";
-import List from "./component/List";
-import Event from "./component/Event";
-import AllEvent from "./component/AllEvent";
+// import FormInput from "./component/form/FormInput";
+import FormMultipleValidation from "./component/form/FormMultipleValidation";
+import FormBasicValidation from "./component/form/FormValidationBasic";
+import MultipleForm from "./component/form/MultipleForm";
 
 const App = () => {
   return (
     <div className="flex justify-center items-start min-h-screen flex-col p-20">
-      <Hello props="Usep Syaikal Arifin" gretting="Selamat Pagi" />
-      <Hello />
-      <Article userLogin={"sudah login"} />
-      <Rendering />
-      <Conditional />
-      <List />
-      <Event />
-      <AllEvent />
+      <div className="border-2 mb-3 w-full">
+        <MultipleForm />
+      </div>
+      <div className="border-2 mb-3 w-full">
+        <FormBasicValidation />
+      </div>
+      <div className="border-2 w-full">
+        <FormMultipleValidation />
+      </div>
     </div>
   );
 };
